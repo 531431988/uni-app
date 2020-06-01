@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import App from './App'
-
-import pageHead from './components/page-head.vue'
-import pageFoot from './components/page-foot.vue'
+import cuCustom from '@/wxcomponents/cu-custom.vue'
 import uLink from '@/components/uLink.vue'
 import store from './store'
 
@@ -15,9 +13,8 @@ Vue.prototype.$backgroundAudioData = {
 	formatedPlayTime: '00:00:00'
 }
 
-Vue.component('page-head', pageHead)
-Vue.component('page-foot', pageFoot)
 Vue.component('uLink', uLink)
+Vue.component('cu-custom', cuCustom)
 
 App.mpType = 'app'
 

@@ -1,62 +1,113 @@
 {
+  "easycom": {
+    // 按需引入 uview-ui
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
   "pages": [
-    // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
-      "path": "pages/tabBar/home",
-      "style": {
-        "navigationBarTitleText": "首页",
-        "app-plus": {
-          "bounce": "vertical",
-          "titleNView": {
-            "buttons": [
-              {
-                "text": "\ue534",
-                "fontSrc": "/static/uni.ttf",
-                "fontSize": "22px",
-                "color": "#FFFFFF"
-              }
-            ]
-          }
-        }
-      }
+      "path": "pages/index/index",
+      "style": {}
     },
     {
-      "path": "pages/tabBar/search",
-      "style": {
-        "navigationBarTitleText": "搜索",
-        "app-plus": {
-          "bounce": "vertical",
-          "titleNView": {
-            "buttons": [
-              {
-                "text": "\ue534",
-                "fontSrc": "/static/uni.ttf",
-                "fontSize": "22px",
-                "color": "#FFFFFF"
-              }
-            ]
-          }
-        }
-      }
+      "path": "pages/basics/layout",
+      "style": {}
     },
     {
-      "path": "pages/tabBar/mine",
-      "style": {
-        "navigationBarTitleText": "我的",
-        "app-plus": {
-          "bounce": "vertical",
-          "titleNView": {
-            "buttons": [
-              {
-                "text": "\ue534",
-                "fontSrc": "/static/uni.ttf",
-                "fontSize": "22px",
-                "color": "#FFFFFF"
-              }
-            ]
-          }
-        }
-      }
+      "path": "pages/basics/background",
+      "style": {}
+    },
+    {
+      "path": "pages/basics/text",
+      "style": {}
+    },
+    {
+      "path": "pages/basics/icon",
+      "style": {}
+    },
+    {
+      "path": "pages/basics/button",
+      "style": {}
+    },
+    {
+      "path": "pages/basics/design",
+      "style": {}
+    },
+    {
+      "path": "pages/basics/tag",
+      "style": {}
+    },
+    {
+      "path": "pages/basics/avatar",
+      "style": {}
+    },
+    {
+      "path": "pages/basics/progress",
+      "style": {}
+    },
+    {
+      "path": "pages/basics/shadow",
+      "style": {}
+    },
+    {
+      "path": "pages/basics/loading",
+      "style": {}
+    },
+    {
+      "path": "pages/component/bar",
+      "style": {}
+    },
+    {
+      "path": "pages/component/nav",
+      "style": {}
+    },
+    {
+      "path": "pages/component/list",
+      "style": {}
+    },
+    {
+      "path": "pages/component/card",
+      "style": {}
+    },
+    {
+      "path": "pages/component/form",
+      "style": {}
+    },
+    {
+      "path": "pages/component/timeline",
+      "style": {}
+    },
+    {
+      "path": "pages/component/chat",
+      "style": {}
+    },
+    {
+      "path": "pages/component/swiper",
+      "style": {}
+    },
+    {
+      "path": "pages/component/modal",
+      "style": {}
+    },
+    {
+      "path": "pages/component/steps",
+      "style": {}
+    },
+    {
+      "path": "pages/plugin/indexes",
+      "style": {}
+    },
+    {
+      "path": "pages/plugin/animation",
+      "style": {}
+    },
+    {
+      "path": "pages/plugin/drawer",
+      "style": {}
+    },
+    {
+      "path": "pages/plugin/verticalnav",
+      "style": {}
     }
   ],
   "globalStyle": {
@@ -66,32 +117,33 @@
     "navigationBarBackgroundColor": "#007AFF",
     "backgroundColor": "#F8F8F8",
     "backgroundColorTop": "#F4F5F6",
-    "backgroundColorBottom": "#F4F5F6"
-  },
-  "tabBar": {
-    "color": "#7A7E83",
-    "selectedColor": "#007AFF",
-    "borderStyle": "black",
-    "backgroundColor": "#F8F8F8",
-    "list": [
-      {
-        "pagePath": "pages/tabBar/home",
-        "iconPath": "static/component.png",
-        "selectedIconPath": "static/componentHL.png",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/tabBar/search",
-        "iconPath": "static/api.png",
-        "selectedIconPath": "static/apiHL.png",
-        "text": "搜索"
-      },
-      {
-        "pagePath": "pages/tabBar/mine",
-        "iconPath": "static/api.png",
-        "selectedIconPath": "static/apiHL.png",
-        "text": "我的"
-      }
-    ]
+    "backgroundColorBottom": "#F4F5F6",
+    "navigationStyle": "custom"
   }
+  // "tabBar": {
+  //   "color": "#7A7E83",
+  //   "selectedColor": "#007AFF",
+  //   "borderStyle": "black",
+  //   "backgroundColor": "#F8F8F8",
+  //   "list": [
+  //     {
+  //       "pagePath": "pages/tabBar/home",
+  //       "iconPath": "static/component.png",
+  //       "selectedIconPath": "static/componentHL.png",
+  //       "text": "首页"
+  //     },
+  //     {
+  //       "pagePath": "pages/tabBar/search",
+  //       "iconPath": "static/api.png",
+  //       "selectedIconPath": "static/apiHL.png",
+  //       "text": "搜索"
+  //     },
+  //     {
+  //       "pagePath": "pages/tabBar/mine",
+  //       "iconPath": "static/api.png",
+  //       "selectedIconPath": "static/apiHL.png",
+  //       "text": "我的"
+  //     }
+  //   ]
+  // }
 }
